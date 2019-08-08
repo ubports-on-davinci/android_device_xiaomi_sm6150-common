@@ -477,7 +477,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libln \
     libdisplayconfig.vendor \
-    libqdMetaData
+    libqdMetaData \
+    wifi-mac-generator
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
