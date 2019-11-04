@@ -124,7 +124,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    libbthost_if
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
