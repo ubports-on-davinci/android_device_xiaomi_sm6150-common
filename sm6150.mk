@@ -6,7 +6,8 @@
 
 # Inherit from those products. Most specific first.	
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)	
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)	
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)	
+$(call inherit-product, $(SRC_TARGET_DIR)/product/halium.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)	
 
 # Get non-open-source specific aspects
@@ -126,14 +127,14 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    libxml2 \
-    Snap
+    libxml2
+#    Snap
 
 # CNE
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
+# PRODUCT_PACKAGES += \
+#     cneapiclient \
+#     com.quicinc.cne \
+#     services-ext
 
 # Context hub HAL
 PRODUCT_PACKAGES += \
@@ -197,15 +198,15 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
 # IFAA manager
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+# PRODUCT_PACKAGES += \
+#     org.ifaa.android.manager
+# 
+# PRODUCT_BOOT_JARS += \
+#     org.ifaa.android.manager
 
 # IMS
-PRODUCT_PACKAGES += \
-    ims-ext-common
+# PRODUCT_PACKAGES += \
+#     ims-ext-common
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -331,11 +332,11 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Telephony
-PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_PACKAGES += \
+#     telephony-ext
+# 
+# PRODUCT_BOOT_JARS += \
+#     telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -367,11 +368,11 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    hostapd \
-    libwifi-hal-qcom \
+#    hostapd \
+#    libwifi-hal-qcom \
     libwpa_client \
-    wpa_supplicant \
-    wpa_supplicant.conf \
+#    wpa_supplicant \
+#    wpa_supplicant.conf \
     vendor.qti.hardware.wifi.hostapd@1.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor
 

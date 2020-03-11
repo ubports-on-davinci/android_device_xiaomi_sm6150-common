@@ -41,6 +41,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3 earlycon=msm_geni_serial,0x880000 loop.max_part=7 cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += androidboot.vbmeta.avb_version=1.0
 BOARD_KERNEL_CMDLINE += selinux=0
+BOARD_KERNEL_CMDLINE += audit=0
 BOARD_KERNEL_CMDLINE += module.sig_enforce=0
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
