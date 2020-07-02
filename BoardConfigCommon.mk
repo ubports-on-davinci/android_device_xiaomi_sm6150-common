@@ -44,6 +44,7 @@ BOARD_KERNEL_CMDLINE += selinux=0
 BOARD_KERNEL_CMDLINE += audit=0
 BOARD_KERNEL_CMDLINE += module.sig_enforce=0
 BOARD_KERNEL_CMDLINE += apparmor=1 security=apparmor
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
